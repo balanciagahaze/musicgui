@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envanter Sayım Formu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Envanter Sayım Kağıdı</h1>
+        
+        <form id="inventory-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün Kodu</th>
+                        <th>Ürün Adı</th>
+                        <th>Ocak</th>
+                        <th>Şubat</th>
+                        <th>Mart</th>
+                        <th>Nisan</th>
+                        <th>Mayıs</th>
+                        <th>Haziran</th>
+                        <th>Temmuz</th>
+                        <th>Ağustos</th>
+                        <th>Eylül</th>
+                        <th>Ekim</th>
+                        <th>Kasım</th>
+                        <th>Aralık</th>
+                        <th>İşlem</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-table-body">
+                    <!-- Dinamik olarak buraya satırlar eklenecek -->
+                </tbody>
+            </table>
+
+            <div class="form-actions">
+                <button type="button" class="add-row-btn" onclick="addRow()">Yeni Ürün Ekle</button>
+                <button type="submit" class="submit-btn">Kaydet</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
